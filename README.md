@@ -14,3 +14,7 @@ more information if they have friends over and are talking about dogs but do not
 2. Upload the new file **data.zip** to colab.
 3. Upload the notebook to colab.
 4. Execute all cells `CTRL+F9`.
+5. Once all cells have been executed the webserver **app.py** in the root of the project can be started.
+
+# Website preview
+![image](https://github.com/pfistdo/ML2_Project/assets/100299364/761ea8eb-e302-4fbf-acc3-c71d698b741d)
