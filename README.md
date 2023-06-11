@@ -13,4 +13,4 @@ more information if they have friends over and are talking about dogs but do not
 1. ZIP the folder **data**.
 2. Upload the new file **data.zip** to colab.
 3. Upload the notebook to colab.
-4. Execute all cells `shift+F9`.
+4. Execute all cells `CTRL+F9`.
