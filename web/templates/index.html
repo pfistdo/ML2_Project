@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dog Breed Classifier</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css"
+        integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+    <link href="css/custom.css" rel="stylesheet" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js" async></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center" id="alerts"></div>
+        <div class="row">
+            <div class="col-12 mb-3">
+                <h1>Machine Learning II</h1>
+                <p>
+                    Our Dog Classifier is an advanced deep learning model designed to identify and classify dog breeds
+                    with exceptional accuracy. Powered by convolutional neural networks, it analyzes key features and
+                    patterns in dog images to provide precise breed predictions. Whether you're a dog enthusiast or a
+                    researcher, this model offers invaluable insights into the world of dog breeds. Experience the
+                    convenience of uploading an image and quickly obtaining the predicted breed. Discover the
+                    capabilities of our Dog Classifier and unlock a wealth of knowledge about different dog breeds.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-3">
+                <h2>Dog Breed Classification</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-3">
+                <label for="image" class="form-label">Upload an image of a dog</label>
+                <input type="file" class="form-control" id="upload_image" name="file" onchange="preview_image()" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mb-3">
+                <div class="btn-group">
+                    <button onclick="upload_image()" id="upload" class="btn btn-primary fix-width">Upload</button>
+                    <button onclick="classify_image()" class="btn btn-secondary fix-width" id="classify_btn"
+                        disabled>Classify
+                        image</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 mb-3">
+                <div id="imagePreview" class=""></div>
+            </div>
+            <div class="col-6 mb-3">
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
